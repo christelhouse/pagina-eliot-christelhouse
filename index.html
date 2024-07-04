@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Undecided</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .navbar-brand {
+      font-size: 36px;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+      font-size: 20px;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ff6600;
+    }
+    .section {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 48px;
+      margin-bottom: 60px;
+      color: #333;
+    }
+    .product, .concert {
+      margin-bottom: 40px;
+    }
+    .product img, .gallery img {
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      margin: 20px;
+    }
+    .product-info, .concert-info, .blog-post {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 20px;
+    }
+    .price {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ff6600;
+    }
+    .button {
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      padding: 20px 40px;
+      font-size: 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #ff8533;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 60px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 24px;
+    }
+    .social {
+      margin-top: 80px;
+    }
+    .social a {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      background-color: #ff6600;
+      color: #fff;
+      font-size: 32px;
+      border-radius: 50%;
+      text-align: center;
+      margin-right: 40px;
+      transition: background-color 0.3s ease;
+    }
+    .social a:hover {
+      background-color: #ff8533;
+    }
+    .rounded-border {
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">The Undecided</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#discos">Discos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ropa">Ropa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#conciertos">Conciertos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#soporte">Soporte Técnico</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section id="discos" class="section discos">
+  <div class="container">
+    <h2>Discos Autografiados</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="product">
+          <img src="images/unde.jpg" alt="" class="rounded-border">
+          <div class="product-info rounded-border">
+            <h3>Entonces como nos llamamos</h3>
+            <p class="price">$39.99</p>
+            <button class="button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="ropa" class="section ropa">
+  <div class="container">
+    <h2>Ropa</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="product">
+          <img src="images/playera.jpg" alt="" class="rounded-border">
+          <div class="product-info rounded-border">
+            <h3>Camiseta The Undecided</h3>
+            <p class="price">$44.99</p>
+            <button class="button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="product">
+          <img src="images/sudadera.jpg" alt="" class="rounded-border">
+          <div class="product-info rounded-border">
+            <h3>Sudadera The Undecided</h3>
+            <p class="price">$54.99</p>
+            <button class="button" data-toggle="modal" data-target="#paymentModal">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="conciertos" class="section conciertos">
+  <div class="container">
+    <h2>Próximos Conciertos</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="concert">
+          <h3>Fecha: 15/10/2024</h3>
+          <p>Londres, Reino Unido - Wembley Stadium</p>
+          <button class="button" data-toggle="modal" data-target="#paymentModal">Comprar entradas</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="concert">
+          <h3>Fecha: 25/10/2024</h3>
+          <p>Los Ángeles, Estados Unidos - Staples Center</p>
+          <button class="button" data-toggle="modal" data-target="#paymentModal">Comprar entradas</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="soporte" class="section soporte">
+  <div class="container">
+    <h2>Soporte Técnico</h2>
+    <p>¿Necesitas ayuda? ¡Contacta con nuestro equipo de soporte técnico!</p>
+    <form class="contact-form">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <button type="submit" class="button btn btn-primary mt-3">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<section class="gallery section">
+  <div class="container">
+    <h2>Galería de Imágenes</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <img src="images/concierto1.jpg" alt="" class="img-fluid rounded-border">
+      </div>
+      <div class="col-md-3">
+        <img src="images/concierto2.jpg" alt="" class="img-fluid rounded-border">
+      </div>
+      <div class="col-md-3">
+        <img src="images/concierto3.jpg" alt="" class="img-fluid rounded-border">
+      </div>
+      <div class="col-md-3">
+        <img src="images/concierto4.jpg" alt="" class="img-fluid rounded-border">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="blog section">
+  <div class="container">
+    <h2>Blog</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="blog-post">
+          <h3>¡Descubre las Aventuras de The Undecided en su Gira por América y América Latina!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum mi nec lorem consectetur.</p>
+        </div>
+        <div class="blog-post">
+          <h3>Otro Título del Post</h3>
+          <p>Sed sed interdum enim. Curabitur vehicula nunc eu convallis faucibus.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <a href="blog.html" class="button">Ver más en el Blog</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="social section">
+  <div class="container">
+    <h2>Redes Sociales</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-2">
+        <a href="https://www.tiktok.com/@theundecidedofficial" target="_blank" class="btn btn-primary btn-lg rounded-pill">TikTok</a>
+      </div>
+      <div class="col-md-2">
+        <a href="https://www.instagram.com/theundecidedofficial" target="_blank" class="btn btn-primary btn-lg rounded-pill">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 The Undecided. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+
+<!-- Payment Modal -->
+<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="paymentModalLabel">Selecciona un método de pago</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Seleccione su método de pago preferido:</p>
+        <button class="btn btn-primary btn-lg btn-block rounded-pill" data-toggle="collapse" data-target="#paypal">PayPal</button>
+        <div id="paypal" class="collapse">
+          <label for="paypalEmail">Email de PayPal:</label>
+          <input type="email" id="paypalEmail" name="paypalEmail" class="form-control" required>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block rounded-pill" data-toggle="collapse" data-target="#creditCard">Tarjeta de Crédito</button>
+        <div id="creditCard" class="collapse">
+          <label for="cardNumber">Número de Tarjeta:</label>
+          <input type="text" id="cardNumber" name="cardNumber" class="form-control" required>
+          <label for="cardName">Nombre en la Tarjeta:</label>
+          <input type="text" id="cardName" name="cardName" class="form-control" required>
+          <label for="cardExpiry">Fecha de Expiración:</label>
+          <input type="text" id="cardExpiry" name="cardExpiry" class="form-control" required>
+          <label for="cardCVC">CVC:</label>
+          <input type="text" id="cardCVC" name="cardCVC" class="form-control" required>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block rounded-pill" data-toggle="collapse" data-target="#bankTransfer">Transferencia Bancaria</button>
+        <div id="bankTransfer" class="collapse">
+          <p>Por favor transfiera el monto total a la siguiente cuenta bancaria:</p>
+          <p>Banco: BBVA</p>
+          <p>Número de cuenta: 123456789</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
